@@ -1,0 +1,233 @@
+﻿<!doctype html>
+
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Login / Register</title>
+
+<link href="main.css"  rel="stylesheet" type="text/css">
+
+</head>
+	<div style="position: fixed; bottom: 170px; right: 15px; ">
+		<a href="main.html"><img src="sidemenu/home.png" title="홈으로"></a>
+	</div>
+	<div style="position: fixed; bottom: 138px; right: 15px; ">
+		<a href="#content"><img src="sidemenu/search.png" title="검색"></a>
+	</div>
+	<div style="position: fixed; bottom: 106px; right: 15px; ">
+		<a href="Register.html"><img src="sidemenu/key.png" title="로그인"></a>
+	</div>
+	<div style="position: fixed; bottom: 74px; right: 15px; ">
+		<a href="cart.html"><img src="sidemenu/cart.png" title="장바구니"></a>
+	</div>
+	<div style="position: fixed; bottom: 42px; right: 15px; ">
+		<a href="#"><img src="sidemenu/up.png" title="위로 가기"></a>
+	</div>
+	<div style="position: fixed; bottom: 10px; right: 15px; ">
+		<a href="#down"><img src="sidemenu/down.png" title="아래로 가기"></a>
+	</div>
+<style>
+body {
+	background-color: #2E2E2E;
+}
+</style>
+
+<body>
+
+<div id="mainWrapper">
+
+  <header>     
+    <div id="logo">인간장터 </div>      
+    <div id="headerLinks">    	
+    	<a href="main.html" title="home">Home</a>
+    	<a href="Register.html" title="Login/Register">Login/Register</a>
+    	<a href="cart.html" title="Cart">Cart</a>
+    </div>
+  </header>
+
+  <div id="offer">
+  <div id="image"><img class="people" src="people.png"  onmouseover='this.src="people2.png"' onmouseout='this.src="people.png"' style="position:absolute; width:150px; opacity:.3;" ></div>
+    <h2>다양한 인종들을 선택하세요!</h2>
+    <p>다양한 사정을 고려한 맞춤형 서비스!</p> 
+</div>
+  <div id="content">
+
+    <section class="sidebar">     
+	 
+      <input type="text"  id="search"  type="search" placeholder="인간검색" >
+
+      <div id="menubar">
+        <nav class="menu">
+          <h2> 국내인간 </h2>
+          <hr>
+          <ul>            
+           <li><a href="남성.html" title="남성">남성</a></li>
+            <li><a href="여성.html" title="여성">여성</a></li>
+            <li><a href="어린이.html" title="어린이">어린이</a></li>
+          </ul>
+        </nav>
+        
+        <nav class="menu">
+          <h2>해외인간 </h2>
+          <hr>
+          <ul>
+           <li><a href="흑인.html" title="흑인">흑인</a></li>
+            <li><a href="백인.html" title="백인">백인</a></li>       
+          </ul>
+        </nav>
+         <nav class="menu">
+         <br><br><br><br>
+        
+         
+        
+<P>
+<table>
+	<tr>
+    	<td colspan="2">
+		
+    	</td>
+        <td></td>
+   	</tr>
+    <tr>
+		
+	</tr>
+    </table>
+
+
+         <hr> 
+         </nav>
+      </div>
+      
+    </section>
+    
+    <hr/><br/>
+    <form id="login"> 
+        <fieldset style="border-left-width:35px; border-left-color:rgba(221,215,123,1.00); "> 
+            <legend>로그인</legend> 
+            <table> 
+            	<tr>
+                    <td><label for="id">아이디</label></td> 
+                    <td><input type="text" id="id"  size="10"> 
+                    <td rowspan="4" colspan="4"><input type="button" onClick="reset(); 
+                    alert('아이디 또는 비밀번호를 확인하세요.');" value="Login" id="button" 
+                    style="width:100px;	height:50px;">
+                </tr> 
+                
+                <tr> 
+                    <td><label for="pw">비밀번호</label></td> 
+                    <td><input type="password" id="pw"  size="10"></td> 
+                </tr>                 
+            </table> 
+        </fieldset> 
+    </form>
+    <br>   
+<hr /> 
+    <br /> 
+    <form id="register"> 
+        <fieldset style="border-left-width:35px; border-left-color:rgba(221,215,123,1.00)"> 
+            <legend>회원가입</legend> 
+            <table> 
+            	<tr>
+                    <td><label for="id">아이디</label></td> 
+                    <td><input type="text" id="login_form"  size="10"> 
+                    <input type="button" value="중복확인" onclick="alert('사용가능합니다.');"/>						   					</td> 
+                </tr> 
+                
+                <tr> 
+                    <td><label for="pw">비밀번호</label></td> 
+                    <td><input type="password" id="pw"  size="10"></td> 
+                </tr> 
+                
+                <tr> 
+                    <td><label for="pw">비밀번호 확인</label></td> 
+                    <td><input type="password" id="re_pw"  size="10"></td> 
+                </tr> 
+              
+               <tr>
+                	<td><label for="name">이름</label></td>
+                	<td><input type="text" id="name"  size="10">
+               </tr> 
+               
+               <tr>
+               		<td><label for="age">나이</label></td>
+                    <td> <input type="text" max="100" min="1" size="10">
+                <tr>
+               		<td>성별</td>
+    				<td><input type="radio" name="gender" value="man" checked="checked">남자&nbsp;
+    				<input type="radio" name="gender" value="women">여자</td>
+                </tr>
+                
+                <tr>
+                	<td><label for="name">주소</label></td>
+                	<td><input type="text" id="name"  size="56">
+                </tr>             
+                
+                <tr>                 
+                    <td><label for="email">이메일</label></td> 
+                    <td><input type="text" name="email" size="10">&nbsp;@   			
+             			<input type="text" id="#2"  size="8" placeholder="직접입력">
+                        <select name="#">
+                 		<option value="naver.com">naver.com</option>
+                 		<option value="nate.com">nate.com</option>
+                 		<option value="hanmail.net">hanmail.net</option>
+                 		<option value="yahoo.co.kr">yahoo.co.kr</option>
+                 		<option value="hotmail.com">hotmail.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                		</select>
+                        
+                 </tr> 
+                 <tr> 
+                    <td><label for="email">연락처</label></td>                
+                    <td><select name="tel1">
+    					<option value="010" selected="selected" >010</option>
+     					<option value="011">011</option>
+     					<option value="016">016</option>
+		     			<option value="017">017</option>
+     					<option value="019">019</option> 
+   						</select> -
+     					<input type="text" name="tel2" size="5" maxlength="4"> -
+     					<input type="text" name="tel3" size="5" maxlength="4">
+                </tr> 
+                <tr> 
+                    <td colspan="2" align="center"> 
+                        <input type="submit" value="가입" onClick="alert('가입성공. 로그인 후 이용 하세요.')">
+                        <input type="button" value="취소" onClick="reset();">
+                    </td> 
+                </tr> 
+            </table> 
+        </fieldset> 
+    </form>
+    <br><hr>
+</div>
+  <footer> 
+
+    
+
+    <div>
+      <p>(주)인간장터<br>대표 : 김종민<br>FAX : 00-0000-0000<br>사업자등록 : 000-000-0000<br>대한민국</p>
+    </div>
+
+    <div>
+      <p>1:1 고객상담 메일로 빠르게 답신드립니다.<br>E-mail : <br>ARS 전화상담(발신자부담) : 00-000-0000<br>구매안전 에스크로 서비스  <br>Copyright 1999-2019 Human_sells Inc</p>
+    </div>
+
+    <div class="footerlinks">
+    
+      <p><a href="https://www.facebook.com/" title="facebook" target="_blank">
+      <img src="f_link/fakebook.png" title="훼이크북">훼이크북 페이지</a></p>
+      <p><a href="http://www.twitter.com/" title="twitter" target="_blank">
+      <img src="f_link/jjack.png" title="트짹이">트짹이 페이지　</a></p>
+      <p><a href="http://www.naver.com/" title="naver" target="_blank">
+      <img src="f_link/navy.png" title="네이비">네이비 페이지　</a></p>
+    </div>
+
+  </footer>
+
+</div>
+
+</body>
+<div id="down"></div>
+</html>
+
